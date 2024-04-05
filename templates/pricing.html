@@ -1,0 +1,116 @@
+{%extends 'base.html'%}
+
+
+{%block head%}
+<title>Pricing</title>
+{%endblock%}
+
+
+{%block body%}
+<div class="topnav" id="myTopnav">
+    <a class="techwatt"><h4>TECHWATT.AI</h4></a>
+    <a href="/">HOME</a>
+    <a href="/bookus">BOOK US</a>
+    <a href="/courses">COURSES</a>
+    <a href="http://felixsam10.pythonanywhere.com/blogs" target="_blank">BLOG</a>
+    <a href="mailto:felixsam922@gmail.com"target='_blank'>CONTACT US</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+<hr>
+
+
+<div class="container py-3">
+<header>
+  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
+    <p class="fs-5 text-body-secondary">Our prices are very affordable for everyone</p>
+  </div>
+</header>
+
+<main>
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Free</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$0</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>free resouces</li>
+            <li>free tutorial guide</li>
+            <li>free access to code</li>
+          </ul>
+          <a href=""></a>
+          <a href="https://www.youtube.com/@tech_watt"target='_blank'><button type="button" 
+            class="w-100 btn btn-lg btn-primary">Get Free Content Here</button></a> 
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Consultation</h4>
+        </div>
+        <div class="card-body">
+            <h1 class="card-title pricing-card-title">$10</h1>
+            <ul  class="list-unstyled mt-3 mb-4">
+              <li>make enquires</li>
+              <li>get access to Demo</li>
+              <li>free advice and expect directions</li>
+            </ul>
+            <a href=""></a>
+            <a href="mailto:felixsam922@gmail.com"target='_blank'><button type="button" 
+              class="w-100 btn btn-lg btn-primary">Contact Us</button></a> 
+          </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-bg-primary border-primary">
+          <h4 class="my-0 fw-normal">Projects and AI Integrations</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$50 plus</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Contact us for price  based on complexcity of the project.
+                Price is also based on the timeline of the project.
+            </li>
+          </ul>
+          <a href="mailto:felixsam922@gmail.com"target='_blank'><button type="button" 
+            class="w-100 btn btn-lg btn-primary">Contact Us</button></a> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</main>
+
+<h2 style="text-align:center;font-weight: bold;">Follow Our Socials</h2>
+<hr>
+<div class="social-buttons" style="align-items: center;margin-left: 23%;">
+  <a href="https://www.facebook.com/felix.nanor.3?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://x.com/felixsa41013626?s=21&t=m0BDkue5ZnFbsOhDG5Tptg" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/tech_watt?igsh=bm93ZWV1NmpxNmZz&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.youtube.com/@tech_watt" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="http://linkedin.com/in/felix-nanor-4599b2204" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#" target="_blank" ><i class="fab fa-tiktok"></i></a>
+  <a href="https://github.com/Tech-Watt" target="_blank" ><i class="fab fa-github"></i></a>
+</div>
+
+
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src={{logo}} class="bi me-2" style="width: 80px;" />
+      </a>
+  
+    
+    </footer>
+  </div>
+  
+</div>
+{%endblock%}

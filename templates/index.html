@@ -1,0 +1,276 @@
+{%extends 'base.html'%}
+
+
+{%block head%}
+<title>Homepage</title>
+{%endblock%}
+
+
+{%block body%}
+  <div class="topnav" id="myTopnav">
+    <a class="techwatt"><h4>TECHWATT.AI</h4></a>
+    <a href="/bookus" class="active">BOOK US</a>
+    <a href="/pricing">PRICING</a>
+    <a href="/courses">COURSES</a>
+    <a href="http://felixsam10.pythonanywhere.com/blogs" target="_blank">BLOG</a>
+    <a href="#messageus">CONTACT US</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  
+  
+  <!-- upload page -->
+<section>
+  <div class="text">
+       <h2>There is Power in Tech</h2>
+      <h4>Integrating AI into Your Business Seamlessly.</h4>
+  </div>
+  <div class="image-container">
+    <img src="{{vision}}" alt="image">
+  </div>
+</section>
+
+<hr>
+<!-- .................................................... -->
+<main style=" background: linear-gradient(90deg,rgb(155, 140, 140), #4301df, rgb(219, 166, 67));width: 100%;" class="container py-5">
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card" style="height: 100%; width: 100%;">
+          <img src="{{autoai}}" alt="">
+          <div class="card-body">
+            <h2 class="card-title">AI and Automation</h2>
+            <p class="blockquote"style="text-align:left;word-wrap:break-word;">
+              The future of AI and automation is promising. 
+              From autonomous vehicles and smart homes to personalized healthcare 
+              and intelligent virtual assistants AI-driven automation will streamline
+              processes that will revolutionize industries,enhance efficiency, and 
+              improve lives.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card"style="height: 100%; width: 100%;">
+            <img src="{{vision2}}" alt="">
+            <div class="card-body">
+              <h5 class="card-title"> AI Revolution</h5>
+              <p class="blockquote" style="text-align:left;word-wrap:break-word;">
+                AI revolutionizes the world. It drives innovation,
+                transforms industries, and empowers human potential. From healthcare 
+                advancements and personalized recommendations to autonomous systems 
+                and intelligent decision-making, AI revolutionizes how we live and work.
+
+              </p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card "style="height: 100%; width: 100%;">
+            <img src="{{vision1}}" alt="">
+            <div class="card-body">
+              <h5 class="card-title">The Potential of AI</h5>
+              <p class="blockquote" style="text-align:left;word-wrap:break-word;">
+                AI is revolutionizing industries, driving innovation, and 
+                enhancing decision-making. From healthcare to finance, transportation 
+                to education, AI is unlocking new possibilities and reshaping the way 
+                we work and interact with technology. Let's embrace the AI revolution together.
+              </p>
+            </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+
+<!-- ........................................................................ -->
+
+<hr>
+<h2 style="text-align:center;font-weight: bold;">Services</h2>
+<hr>
+<div class="row">
+  <div class="column">
+    <div class="card" style="height: 100%;">
+      <img src="{{chatbot}}" alt="image" style="text-align-last: center;width: 100%;height: 100%;text-align:left;word-wrap:break-word;">
+      <div class="container">
+        <h2>Retrieval Augumented Generation (RAG) Chat Bots</h2>
+        <p> 
+          We specialize in creating AI bots that are designed to meet the 
+          unique needs of individuals and businesses based on data.
+          Leveraging the power of artificial intelligence and data-driven approaches, 
+          we develop intelligent bots that offer personalized and efficient interactions.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card" style="height: 100%;">
+      <img src="{{aiteach}}" alt="image" style="text-align-last: center;width: 100%;height: 100%;text-align:left;word-wrap:break-word;">
+      <div class="container">
+        <h2>Teaching How to Build Futuristic AI Solutions</h2>
+        <p> We specialize in providing Teaching Services that empower 
+          individuals to create AI solutions that are highly effective
+          and deliver exceptional results. Our focus is on imparting the
+          knowledge and skills necessary to
+          build AI solutions that surpass mediocrity and truly excel.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card" style="height: 100%;">
+      <img src="{{comvision}}" alt="image" style="text-align-last: center;width: 100%;height: 100%;text-align:left;word-wrap:break-word;">
+      <div class="container">
+        <h2>AI and Computer Vision Solutions</h2>
+        <p>
+          We develop advanced computer vision solutions that are customized to
+          meet the specific requirements of individuals and businesses. 
+          By harnessing the power of cutting-edge technologies and leveraging 
+          data-driven approaches, we create innovative computer 
+          vision solutions that offer enhanced visual perception and understanding.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card" style="height: 100%;">
+      <img src="{{freelance}}" alt="image" style="text-align-last: center;width: 100%;height: 100%;text-align:left;word-wrap:break-word;">
+      <div class="container">
+        <h2>Freelancing Services</h2>
+        <p>
+          We offer professional freelancing services to 
+          individuals and businesses. Our team of experienced 
+          freelancers specializes in various fields and can provide 
+          high-quality services tailored to meet the specific 
+          requirements of our clients.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="height: 100%;">
+      <img src="{{consulting}}" alt="image" style="text-align-last: center;width: 100%;height: 100%;text-align:left;word-wrap:break-word;">
+      <div class="container">
+        <h2>Consultation Services</h2>
+        <p>
+          We offer specialized consulting services to individuals and businesses, 
+          leveraging our expertise in artificial intelligence and data-driven methodologies.
+          Our consulting services are designed to provide expert guidance and strategic 
+          insights, helping clients harness the power of AI for their specific needs. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="height: 100%;">
+      <img src="{{robotics}}" alt="image" style="width: 100%;height: 100%;text-align:left;word-wrap:break-word;text-align-last: center;">
+      <div class="container">
+        <h2>Electronics and Robotics</h2>
+        <p>
+        We offer comprehensive consulting services in the field of robotics and 
+        electronics. Leveraging our expertise and deep understanding of these 
+        domains, we provide expert guidance and strategic advice to individuals 
+        and businesses. Our consulting services cover areas such as robotics 
+        system design, electronics prototyping, component selection, and integration. 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ............................................................................. -->
+ <div class="container my-5">
+  <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <h1 class="text-body-emphasis">TechWatt.AI Vision</h1>
+    <p class="lead" style="text-align:left;word-wrap:break-word; text-align-last: center;">
+      At TechWatt.AI, our vision is to empower individuals and businesses 
+      with transformative AI solutions. Through cutting-edge technology 
+      and data-driven approaches, we strive to create futuristic chatbots 
+      and advanced computer vision solutions that revolutionize user experiences.
+      Our aim is to be at the forefront of AI innovation, enabling our clients to 
+      harness the full potential of artificial intelligence in their digital transformation journey. 
+      We are committed to delivering exceptional results and shaping the future of AI-powered solutions, 
+      making a positive impact on individuals, businesses, and society as a whole
+    </p>
+  </div>
+</div>
+  
+
+<hr>
+<!-- ................................................................... -->
+
+<div id="messageus" class="container my-5">
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 style="display: grid;place-items: center;">Book Our Service Here</h1>
+      <hr>
+      <p class="lead">At TechWatt.AI we believe we cant build without you.Your concerns are our priority.</p>
+      <hr>
+      <form action="message" method="post">
+        <label style="display: grid;place-items: center;font-weight: bold; font-family: 'Roboto';font-size: large;" >Message Us</label>
+        <hr>
+        <div class="form-floating">
+          <input type="text" class="form-control" name="messageus" required>
+          <label for="floatingInput">Contact TechWatt now</label>
+        </div>
+      <hr>
+        <div  class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <button  type="submit" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Send message</button>
+      </div>
+    </form>
+    </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img  src="{{nice}}" alt="" style="width: auto;" >
+    </div>
+  </div>
+</div>
+<!-- ............................................................................ -->
+<hr>
+<h2 style="text-align:center;font-weight: bold;">Follow Our Socials</h2>
+<hr>
+<div class="social-buttons" style="align-items: center;margin-left: 23%;">
+  <a href="https://www.facebook.com/felix.nanor.3?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://x.com/felixsa41013626?s=21&t=m0BDkue5ZnFbsOhDG5Tptg" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/tech_watt?igsh=bm93ZWV1NmpxNmZz&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.youtube.com/@tech_watt" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="http://linkedin.com/in/felix-nanor-4599b2204" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#" target="_blank" ><i class="fab fa-tiktok"></i></a>
+  <a href="https://github.com/Tech-Watt" target="_blank" ><i class="fab fa-github"></i></a>
+</div>
+
+
+<!-- ............................................................................ -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src={{logo}} class="bi me-2" style="width: 80px;" />
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="/courses" class="nav-link px-2 text-body-secondary">Courses</a></li>
+      <li class="nav-item"><a href="/pricing" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="/bookus" class="nav-link px-2 text-body-secondary">Book Us</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Blog</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+<!-- ............................................................................ -->
+<hr>
+<a style="display: grid;place-items: center;" href="#"><button class="btn btn-primary" type="button">BACK TO TOP</button></a>
+<hr>
+{%endblock%}

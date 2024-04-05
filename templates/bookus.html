@@ -1,0 +1,109 @@
+{%extends 'base.html'%}
+
+
+{%block head%}
+<title>Book us</title>
+{%endblock%}
+
+
+{%block body%}
+<div class="topnav" id="myTopnav">
+    <a class="techwatt"><h4>TECHWATT.AI</h4></a>
+    <a href="/">HOME</a>
+    <a href="/pricing">PRICING</a>
+    <a href="/courses">COURSES</a>
+    <a href="http://felixsam10.pythonanywhere.com/blogs" target="_blank">BLOG</a>
+    <a href="mailto:felixsam922@gmail.com"target='_blank'>CONTACT US</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+<hr>
+
+
+  
+<div class="container">
+<main>
+   <form class="card p-2">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="{{logo}}" alt="" width="100">
+    <h2>Booking form</h2>
+    <p class="lead">Book us by filling the form below</p>
+  </div>
+
+  <div class="row g-5" style="display: grid;place-items: center;">
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Fill in all the details</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          </div>
+
+          
+
+          <div div class="col-12">
+            <label for="country" class="form-label">Country</label>
+            <input type="country" class="form-control" id="country" placeholder="Ghana" required>
+          </div>
+
+        </div>
+
+        <div class="col-12">
+            <label for="email" class="form-label">Service Description</label>
+            <input type="text" class="form-control" id="text" 
+            placeholder="Which service category are you booking us for" 
+            style="height: 120px;"required>
+          </div>
+
+          <hr>
+          
+        </div>
+
+       
+      
+    </div>
+  </div>
+  <button class="w-100 btn btn-primary btn-lg" type="submit" >Send</button>
+</form>
+</main>
+</div>
+<hr>
+
+
+<h2 style="text-align:center;font-weight: bold;">Follow Our Socials</h2>
+<hr>
+<div class="social-buttons" style="align-items: center;margin-left: 23%;">
+  <a href="https://www.facebook.com/felix.nanor.3?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://x.com/felixsa41013626?s=21&t=m0BDkue5ZnFbsOhDG5Tptg" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/tech_watt?igsh=bm93ZWV1NmpxNmZz&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.youtube.com/@tech_watt" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="http://linkedin.com/in/felix-nanor-4599b2204" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#" target="_blank" ><i class="fab fa-tiktok"></i></a>
+  <a href="https://github.com/Tech-Watt" target="_blank" ><i class="fab fa-github"></i></a>
+</div>
+
+
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src={{logo}} class="bi me-2" style="width: 80px;" />
+      </a>
+  
+    
+    </footer>
+  </div>
+  
+</div>
+{%endblock%}
