@@ -61,3 +61,5 @@ def courses():
     return render_template('courses.html',logo = logo)
 
 
+#if __name__ == '__main__':
+    #app.run(debug=True)
