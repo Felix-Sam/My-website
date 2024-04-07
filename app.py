@@ -1,7 +1,28 @@
 from flask import Flask, render_template, redirect, url_for, request, send_from_directory
 from werkzeug.utils import secure_filename
+from twilio.rest import Client
+from dotenv import load_dotenv 
 import os
 
+load_dotenv()
+twilio_key = os.getenv('TWILIO_KEY')
+twilio_sid = os.getenv('TWILIO_SID')
+print(twilio_key,twilio_sid,sep=' ')
+account_sid = twilio_sid 
+auth_token = twilio_key 
+client = Client(account_sid, auth_token)
+
+def send_message(message_text):
+    try:
+        client.messages.create(
+        from_='+12567276832',
+        body = message_text,
+        to='+2330257330594'
+        )
+    except:
+        pass
+
+  
 
 app = Flask(__name__)
 app.config["UPLOAD_DIRECTORY"] = 'static/images'
@@ -38,12 +59,23 @@ def hompage():
 # For receiving messages from user
 
 
-@app.route('/message', methods=['POST', 'GET'])
+@app.route('/submit', methods=['POST', 'GET'])
 def messageus():
     if request.method == 'POST':
-        message = request.form.get('messageus')
-        print(message)
-    return redirect('/')
+        first_name = request.form.get('firstName')
+        last_name = request.form.get('lastName')
+        email = request.form.get('email')
+        country = request.form.get('country')
+        text = request.form.get('serviceDescription')
+        data = {
+            'name':first_name+' '+last_name,
+            'email':email,
+            'country':country,
+            'message':text
+        }
+        send_message(message_text=data)
+        
+    return redirect('/bookus')
 
 @app.route('/bookus',methods=['POST', 'GET'])
 def bookus():
@@ -61,5 +93,5 @@ def courses():
     return render_template('courses.html',logo = logo)
 
 
-#if __name__ == '__main__':
-    #app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)

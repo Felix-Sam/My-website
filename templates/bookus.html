@@ -18,65 +18,55 @@
   </div>
 <hr>
 
-
-  
 <div class="container">
-<main>
-   <form class="card p-2">
-  <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="{{logo}}" alt="" width="100">
-    <h2>Booking form</h2>
-    <p class="lead">Book us by filling the form below</p>
-  </div>
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="{{logo}}" alt="" width="100">
+      <h2>Booking form</h2>
+      <p class="lead">Book us by filling the form below</p>
+    </div>
 
-  <div class="row g-5" style="display: grid;place-items: center;">
-    <div class="col-md-7 col-lg-8">
-      <h4 class="mb-3">Fill in all the details</h4>
-      <form class="needs-validation" novalidate>
-        <div class="row g-3">
-          <div class="col-sm-6">
-            <label for="firstName" class="form-label">First name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-          </div>
+    <div class="row g-5" style="display: grid;place-items: center;">
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Fill in all the details</h4>
+        <form class="needs-validation" novalidate action="/submit" method="POST">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="" required>
+            </div>
 
-          <div class="col-sm-6">
-            <label for="lastName" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-          </div>
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required>
+            </div>
 
-          <div class="col-12">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
+            </div>
 
-          
+            <div class="col-12">
+              <label for="country" class="form-label">Country</label>
+              <input type="text" class="form-control" id="country" name="country" placeholder="Ghana" required>
+            </div>
 
-          <div div class="col-12">
-            <label for="country" class="form-label">Country</label>
-            <input type="country" class="form-control" id="country" placeholder="Ghana" required>
-          </div>
-
-        </div>
-
-        <div class="col-12">
-            <label for="email" class="form-label">Service Description</label>
-            <input type="text" class="form-control" id="text" 
-            placeholder="Which service are you booking us for" 
-            style="height: 120px;"required>
+            <div class="col-12">
+              <label for="serviceDescription" class="form-label">Service Description</label>
+              <textarea class="form-control" id="serviceDescription" name="serviceDescription" placeholder="Which service are you booking us for" style="height: 120px;" required></textarea>
+            </div>
           </div>
 
           <hr>
-          
-        </div>
 
-       
-      
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Send</button>
+        </form>
+      </div>
     </div>
-  </div>
-  <button class="w-100 btn btn-primary btn-lg" type="submit" >Send</button>
-</form>
-</main>
+  </main>
 </div>
+  
+
 <hr>
 
 
